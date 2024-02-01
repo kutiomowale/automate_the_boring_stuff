@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
-# mclip.py - A multi-clipboard program
+# mclip.py - A multi-clipboard program - Termux version
 import sys
-import pyperclip
+import subprocess
 
 TEXT = {'agree': """Yes I agree. That sounds fine to me.""",
         'busy': """Sorry, can we do this later this week or next week?""",
@@ -14,7 +14,7 @@ if len(sys.argv) < 2:
 keyphrase = sys.argv[1]  # first command line arg is keyphrase
 
 if keyphrase in TEXT:
-    pyperclip.copy(TEXT[keyphrase])
+    subprocess.run(['termux-clipboard-set', TEXT[keyphrase]])
     print('Text for ' + keyphrase + ' copied to clipboard.')
 else:
     print('There is no text for ' + keyphrase)
