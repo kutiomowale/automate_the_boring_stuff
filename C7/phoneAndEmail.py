@@ -33,9 +33,9 @@ for groups in phoneRegex.findall(text):
 for groups in emailRegex.findall(text):
     matches.append(groups[0])
 
-# TODO: Copy this data as a single to the clipboard
+Copy this data as a single to the clipboard
 if len(matches) > 0:
-    pyperclip.paste('\n'.join(matches))
+    pyperclip.copy('\n'.join(matches))
     print('Copied to clipboard:')
     print('\n'.join(matches))
 else:
