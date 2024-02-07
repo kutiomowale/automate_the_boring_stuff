@@ -20,14 +20,17 @@ int main(void)
 	{
     		printf("%s", prompt_text);
     		scanf("%s", response);
-    		if strres == 'help':
-        print(help_text)
-    elif res == 'credits':
-        print(credit_text)
-    elif res == 'exit':
-        print(credit_text)
-        print('Bye')
-        break
-    else:
-        print('Unknown command')
+    		if (strcmp("help", response) == 0)
+        		printf("%s", help_text);
+		else if (strcmp("credits", response) == 0)
+        		printf("%s", credit_text);
+		else if (strcmp("exit", response) == 0)
+		{
+        		printf("%s", credit_text);
+        		printf("Bye\n");
+			break;
+		}
+    		else
+        		printf("Unknown command\n");
+	}
 }
