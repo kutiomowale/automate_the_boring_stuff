@@ -1,6 +1,11 @@
 #!/usr/bin/env python3
-# Date Detection
-# Practice Project
+"""Date Detection
+
+Practice Project
+To detect valid dates in text
+with the aid of regex.
+
+"""
 
 import re
 import sys
