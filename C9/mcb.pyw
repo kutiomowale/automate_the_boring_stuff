@@ -1,8 +1,11 @@
 #! python3
 # mcb.pyw - Saves and loads pieces of text to the clipboard.
+# Practice Project
 # Usage: py.exe mcb.pyw save <keyword> - Saves clipboard to keyword.
 #        py.exe mcb.pyw <keyword> - Loads keyword to clipboard.
 #        py.exe mcb.pyw list - Loads all keywords to clipboard.
+#        py.exe mcb.pyw delete - Delete all keywords.
+#        py.exe mcb.pyw delete <keyword> - Delete a keyword from the shelf.
 
 
 import shelve

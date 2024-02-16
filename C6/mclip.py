@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 # mclip.py - A multi-clipboard program
+# Project: Multi-Clipboard Automatic Messages
+# Chapter Project
 import sys
 import pyperclip
 
