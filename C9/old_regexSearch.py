@@ -6,19 +6,19 @@ Practice Project
 A program that opens all .txt files in a folder
 and searches for any line that matches a user-supplied
 regular expression. The matching lines are printed to the screen.
+
+Uses ast.literal_eval(input()) for input
+So users input regex in the form
+r'regex_pattern'
+
 """
 import re
-import sys
+import ast
 from pathlib import Path
 
 # User-supplied regex for the search.
 print("Enter your regex pattern:")
-userRegex = r'' + input()
-try:
-    re.search(userRegex, '')
-except re.error as e:
-    print(e.msg)
-    sys.exit()
+userRegex = ast.literal_eval(input())
 
 # All .txt in current folder.
 allTxt = list(Path.cwd().glob('*.txt'))
