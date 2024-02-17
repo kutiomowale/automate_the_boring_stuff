@@ -32,6 +32,8 @@ def isStrongPassword(password):
         TypeError: If password is not a string
 
     Examples:
+        >>> isStrongPassword('Aa345678\\n')
+        False
         >>> isStrongPassword('Aa345678')
         True
         >>> isStrongPassword('Aa345678 ')

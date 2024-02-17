@@ -1,1 +1,1 @@
-8 INPUT VALIDATION
+Chapter 8 – Input Validation
